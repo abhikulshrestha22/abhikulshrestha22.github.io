@@ -2,3 +2,11 @@
     background: lightblue;
     height: 90vh;
 }
+
+body{
+    position: relative;
+}
+
+.active{
+    background: red;
+}

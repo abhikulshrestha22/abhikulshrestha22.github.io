@@ -12,36 +12,65 @@
 
     <title>Hello, world!</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar-menu" data-offset="50">
 
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <nav  id="navbar-menu" class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
           <a class="navbar-brand" href="#">Abhishek Kulshrestha</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-              <a class="nav-item nav-link" href="#">Resume </a>
-              <a class="nav-item nav-link" href="#">Contact</a>
+            <ul class="ml-md-auto nav nav-pills navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#one">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#two">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#three">Resume</a>
+                      </li>
+                    <li class="nav-item">
+                          <a class="nav-link" href="#four">Contact</a>
+                        </li>
+              
               
             </div>
           </div>
         </nav>
-        <div class="container-fluid banner-area" >
-          <div class="row">
-            <div class="col-xs-10 offset-xs-2" id="banner-text">
-
+        <div  class="container-fluid banner-area" >
+            
+            <div id="one" style="height: 800px; background: red">
+                One
             </div>
-          </div>
+            <p>...</p>
+            
+            <div id="two" style="height: 800px; background:blue">
+              Two
+            </div>
+            <p>...</p>
+            
+            <div id="three" style="height: 800px;background:green">
+              Three
+            </div>
+            <p>...</p>
+            
+            <div id="four" style="height: 800px;background:yellow">
+              Four
+            </div>
+            
+          
         </div>
    
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <script src="node_modules/typer-js/typer.js"></script>
 
@@ -51,6 +80,6 @@
             .cursor({block: false, blink: 'hard', color: 'red'});
 
     </script>
-
+    <script src="./smooth-navigation.js"/>
   </body>
 </html>
