@@ -1,12 +1,23 @@
 .banner-area{
-    background: lightblue;
-    height: 90vh;
+    background: url('./images/c.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+
+}
+
+.intro-text{
+    padding-top: 300px;
+    padding-bottom: 200px;
+
 }
 
 body{
     position: relative;
 }
 
-.active{
-    background: red;
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color:green;
 }
