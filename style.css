@@ -7,6 +7,23 @@
     color: white;
 
 }
+.banner-area-headline{
+    font-size: 4.0rem;
+}
+
+.content-box{
+    text-align: center;
+    
+}
+
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.headings{
+    text-align: center;
+}
 
 .intro-text{
     padding-top: 300px;
@@ -20,4 +37,46 @@ body{
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     background-color:green;
+}
+
+/* --------------------------------------------------Portfolio styles----------------------------------------------- */
+.portfolio-img-container{
+    
+}
+
+.portfolio-img-container img{
+    border: 1px solid #e8e8e8;
+    width: 100%;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+.middle{
+    transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top:50%;
+    left:50%;
+    text-align: center;
+}
+
+.portfolio-img-container:hover .middle{
+    opacity: 1;
+}
+
+.portfolio-img-container:hover .portolio-img{
+    opacity: 0.5;
+}
+
+.modal-footer{
+    display: block;
+}
+
+@media(min-width:900px) 
+    {
+        .modal-dialog{
+            max-width: 800px;
+            }
 }
