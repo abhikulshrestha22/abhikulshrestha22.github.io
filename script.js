@@ -8,7 +8,7 @@ $(document).ready(function(){
 
         if($(document).scrollTop()> 50){
             
-            $(".navbar").css("background-color","#2a773c");
+            $(".navbar").css("background-color","black");
             $(".nav-link.active").css("background-color","white");
             $(".nav-link").css("background-color","transparent")
             
