@@ -58,7 +58,8 @@ body{
 }
 
 .portfolio-img-container img{
-    border: 1px solid #e8e8e8;
+    box-shadow: 0 10px 6px -6px #777;
+    
     width: 100%;
     opacity: 1;
     margin-bottom: 10px;
@@ -113,4 +114,10 @@ div i{
 .dark-theme{
     color: white;
     background: #4b4b4c;
+}
+
+
+.sub-section{
+    padding-bottom: 40px;
+    padding-top: 40px;
 }

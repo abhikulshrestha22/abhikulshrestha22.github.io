@@ -61,13 +61,13 @@
                 <!-- ____________________________Project 1_______________________________________________ -->
             <div class="row">
                 <div class="col-md-4 portfolio-img-container">
-                  <img class="portfolio-img" src="images/Capture2.PNG" />
+                  <img class="portfolio-img" src="./images/Capture2.PNG" />
                   <div class="middle">
                     <h3>MovieRator</h3>
-                    <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Know more</button> 
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#modal1">Know more</button> 
                   </div>
                   <!-- Modal -->
-                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                       <div class="modal-content">
                         <div class="modal-header">
@@ -79,7 +79,7 @@
                         </div>
                         <div class="modal-body">
                             <span>A node.js cli to rate all movies in your folder according to the imdb ratings.</span>
-                          <img src="images/Capture2.PNG" /> 
+                          <img src="./images/Capture2.PNG" /> 
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -93,13 +93,13 @@
                 
                 <!-- ____________________________Project 2_______________________________________________ -->
                 <div class="col-md-4 portfolio-img-container">
-                    <img class="portfolio-img" src="/images/Capture1.PNG" />
+                    <img class="portfolio-img" src="./images/Capture1.PNG" />
                     <div class="middle">
                       <h3>NotesApp</h3>
-                      <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Know more</button> 
+                      <button class="btn btn-primary" data-toggle="modal" data-target="#modal2">Know more</button> 
                     </div>
                     <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                       <div class="modal-dialog" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
@@ -114,6 +114,7 @@
                                   This App is built using Node.js with Express using MongoDB at the backend.
                                   The front end connects to the back end by sending AJAX requests through
                                   JQuery</span>
+                                  <img src="./images/Capture1.PNG" />
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -125,13 +126,13 @@
                   </div>
                   <!-- ____________________________Project 3_______________________________________________ -->
                 <div class="col-md-4 portfolio-img-container">
-                    <img class="portfolio-img" src="images/Capture3.PNG" />
+                    <img class="portfolio-img" src="./images/Capture3.PNG" />
                     <div class="middle">
                       <h3>Wallpaper-App                        </h3>
-                      <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Know more</button> 
+                      <button class="btn btn-primary" data-toggle="modal" data-target="#modal3">Know more</button> 
                     </div>
                     <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                       <div class="modal-dialog" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
@@ -145,6 +146,7 @@
                           <div class="modal-body">
                               <span>An electron app to change the wallpaper online based on Node.js.
                                 </span>
+                                <img src="./images/Capture3.PNG" />
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -157,7 +159,7 @@
                 </div>
                 </div>
                     <!-- Button trigger modal -->
-                    <div id="three"  class="dark-theme container-fluid section">
+                  <div id="three"  class="dark-theme container-fluid section">
                       <div class="row content-box" id="one" >
                           <div class="col-lg-12 ">
                               <h1 class="dark-theme headings">My Skills</h1>
@@ -193,14 +195,88 @@
         
         
                           </div>
-                          <div class="col-lg-12">
+                          <div class=" col-lg-12 sub-section">
                             To know more about me,<br>
-                            <a href="./resume.pdf" target="_blank" class="btn btn-primary">View Resume</a>
+                            <a href="./resume.pdf" target="_blank" class="btn btn-warning">View Resume</a>
                           </div>
                       </div>
         
         
                   </div>
+
+                  <div id="four"  class="container-fluid section">
+                    <div class="row content-box" id="one" >
+                        <div class="col-lg-12 ">
+                            <h1 class=" headings">Contact Me</h1>
+                            <form id="contact-form" method="post" action="contact.php" role="form">
+                              <div class="messages">
+
+                              </div>
+                              <div class="controls">
+                                  <div class="row">
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label for="form-name">FirstName*</label>
+                                        <input type="text" id="form-name" name="name" class="form-control" placeholder="Please enter your firstname" required="required" data-error="Firstname is required">
+                                        <div class="help-block with-errors"></div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label for="form-lastname">Lastname*</label>
+                                        <input type="text" id="form-lastname" name="surname" class="form-control" placeholder="Please enter your lastname" required="required" data-error="Firstname is required">
+                                        <div class="help-block with-errors"></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label for="form_email">Email *</label>
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                          <label for="form_need">Please specify your need *</label>
+                                          <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                              <option value=""></option>
+                                              <option value="Request quotation">Request quotation</option>
+                                              <option value="Request order status">Request order status</option>
+                                              <option value="Request copy of an invoice">Request copy of an invoice</option>
+                                              <option value="Other">Other</option>
+                                          </select>
+                                          <div class="help-block with-errors"></div>
+                                      </div>
+                                  </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="form_message">Message *</label>
+                                            <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="submit" class="btn btn-success btn-send" value="Send message">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="text-muted">
+                                            <strong>*</strong> These fields are required. Contact form template by
+                                            <a href="https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form" target="_blank">Bootstrapious</a>.</p>
+                                    </div>
+                                </div>
+                              </div>
+                            </form>
+                        </div>
+                    </div> 
+                  </div>
+                            
+                  
   
 
 
@@ -212,7 +288,7 @@
   crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <script src="node_modules/typer-js/typer.js"></script>
+    
 
     <script>
       typer(document.querySelector('#banner-text'),70)
@@ -220,6 +296,52 @@
             .cursor({block: false, blink: 'hard', color: 'red'});
 
     </script>
+    <script>
+    $(function () {
+
+// init the validator
+// validator files are included in the download package
+// otherwise download from http://1000hz.github.io/bootstrap-validator
+
+$('#contact-form').validator();
+
+
+// when the form is submitted
+$('#contact-form').on('submit', function (e) {
+
+    // if the validator does not prevent form submit
+    if (!e.isDefaultPrevented()) {
+        var url = "contact.php";
+
+        // POST values in the background the the script URL
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: $(this).serialize(),
+            success: function (data)
+            {
+                // data = JSON object that contact.php returns
+
+                // we recieve the type of the message: success x danger and apply it to the 
+                var messageAlert = 'alert-' + data.type;
+                var messageText = data.message;
+
+                // let's compose Bootstrap alert box HTML
+                var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+                
+                // If we have messageAlert and messageText
+                if (messageAlert && messageText) {
+                    // inject the alert to .messages div in our form
+                    $('#contact-form').find('.messages').html(alertBox);
+                    // empty the form
+                    $('#contact-form')[0].reset();
+                }
+            }
+        });
+        return false;
+    }
+})
+});</script>
     <script src="script.js" type="text/JavaScript"></script>
   </body>
 </html>
